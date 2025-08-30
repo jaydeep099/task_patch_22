@@ -86,7 +86,7 @@
   // Expected: case-insensitive match by name/email
   function searchContacts(q) {
     // BUG: case-sensitive and only by name
-    return contacts.filter((c) => (c.name.toLowerCase()).includes(q.toLowerCase()) || c.email.toLowerCase()).includes(q.toLowerCase());
+    return contacts.filter((c) => (c.name.toLowerCase()).includes(q.toLowerCase() || c.email.toLowerCase()).includes(q.toLowerCase()));
   }
 
   // Expected: remove by email
